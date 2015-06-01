@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Checked url:</strong>
+  <%= @check_link.checked_url %>
+</p>
+
+<p>
+  <strong>Errors found:</strong>
+  <%= @check_link.errors_found %>
+</p>
+
+<%= link_to 'Edit', edit_check_link_path(@check_link) %> |
+<%= link_to 'Back', check_links_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@check_link) do |f| %>
+  <% if @check_link.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@check_link.errors.count, "error") %> prohibited this check_link from being saved:</h2>
+
+      <ul>
+      <% @check_link.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :checked_url %><br>
+    <%= f.text_area :checked_url %>
+  </div>
+  <div class="field">
+    <%= f.label :errors_found %><br>
+    <%= f.number_field :errors_found %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
