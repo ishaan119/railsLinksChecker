@@ -5,6 +5,7 @@ require "set"
 require 'typhoeus'
 
 class CheckLink < ActiveRecord::Base
+  validates :checked_url, presence: true
 	
 	
 	def initialize()
@@ -42,7 +43,7 @@ class CheckLink < ActiveRecord::Base
       else
         @links_hash[link1] = 1
         #Put all the domain matching links on the stack
-        if get_host_without_www(link1).include? @hostname
+        if get_host_without_www(link1) == @hostname
           @link_stack.push(link1)
         end  
       end
@@ -54,7 +55,9 @@ class CheckLink < ActiveRecord::Base
     #Loop through the stack until the stack is empty to get all the links 
     #that needs to be visited
     until @link_stack.empty?
+      puts @link_stack.length
       new_link = @link_stack.pop()
+      puts new_link
       if new_link.start_with? '/'
         new_link = 'http://www.' + @hostname + new_link
       end
@@ -67,12 +70,13 @@ class CheckLink < ActiveRecord::Base
         if link2.start_with? '/'
             link2 = 'http://www.' + @hostname + link2
         end
+        
         if @links_hash.key?(link2)
           @links_hash[link2] += 1
         else
           @links_hash[link2] = 1
           #Put all the domain matching links on the stack
-          if get_host_without_www(link2).include? @hostname
+          if get_host_without_www(link2) == @hostname
             @link_stack.push(link2)
           end
         end  
@@ -88,6 +92,9 @@ class CheckLink < ActiveRecord::Base
   @error_links.each do |key,value|
     puts key
   end
+  
+  self.errors_found = @error_links.length
+  self.checked_url = model_check_link
   
   end
 
@@ -139,7 +146,6 @@ class CheckLink < ActiveRecord::Base
 		  end
 		  puts 'Started running'
 		  hydra.run 
-      puts fail
 		end
 
 end

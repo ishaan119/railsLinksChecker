@@ -26,7 +26,6 @@ class CheckLinksController < ApplicationController
   # POST /check_links.json
   def create
     @check_link = CheckLink.new()
-    puts check_link_params['checked_url']
 
     @check_link.get_all_links(check_link_params['checked_url']).class
 
