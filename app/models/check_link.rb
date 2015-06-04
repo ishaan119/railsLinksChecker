@@ -2,7 +2,7 @@ require 'rubygems'
 require 'nokogiri'
 require 'rest_client'
 require "set"
-require 'thread'
+require 'typhoeus'
 
 class CheckLink < ActiveRecord::Base
 	
@@ -22,13 +22,21 @@ class CheckLink < ActiveRecord::Base
   def get_all_links(model_check_link)
     #Get only the hostname to compare afterwards
     @hostname = get_host_without_www(model_check_link)
+    
+    
     #Get links for the first page
     links = get_links_for_single_link(model_check_link)
     links.each do |link1|
       #Ignore the link if https
-      if link1.include? 'https'
+      if link1.include? 'https' or link1.include? 'jpg' or link1.include? 'gif' or link1.include? 'mailto'
           next
       end
+      
+      #if link starts with / then append hostname
+      if link1.start_with? '/'
+          link1 = 'http://www.' + @hostname + link1
+      end 
+      
       if @links_hash.key?(link1)
         @links_hash[link1] += 1
       else
@@ -41,14 +49,23 @@ class CheckLink < ActiveRecord::Base
     end
     puts @links_hash.length 
     puts @link_stack.length
+    
+    
     #Loop through the stack until the stack is empty to get all the links 
     #that needs to be visited
     until @link_stack.empty?
       new_link = @link_stack.pop()
+      if new_link.start_with? '/'
+        new_link = 'http://www.' + @hostname + new_link
+      end
+      
       links = get_links_for_single_link(new_link)
       links.each do |link2|
-        if link2.include? 'https'
+        if link2.include? 'https' or link2.include? 'jpg' or link2.include? 'gif' or link2.include? 'mailto'
           next
+        end
+        if link2.start_with? '/'
+            link2 = 'http://www.' + @hostname + link2
         end
         if @links_hash.key?(link2)
           @links_hash[link2] += 1
@@ -64,6 +81,14 @@ class CheckLink < ActiveRecord::Base
       
   puts @links_hash.length     
   puts @link_stack.length
+  
+  start_checking()
+  puts @error_links.length
+  
+  @error_links.each do |key,value|
+    puts key
+  end
+  
   end
 
 	private
@@ -89,6 +114,32 @@ class CheckLink < ActiveRecord::Base
       rescue
         return 'false'
 		  end
+		end
+		
+		def start_checking()
+		  hydra = Typhoeus::Hydra.new
+		  successes = 0
+		  fail = 0
+		  @links_hash.each do |url,value|
+        request = Typhoeus::Request.new(url,followlocation: true)
+        request.on_complete do |response|
+           if response.success?
+               successes += 1
+           elsif response.timed_out?
+               # aw hell no
+               puts "got a time out"
+           elsif response.code == 0
+               # Could not get an http response, something's wrong.
+               puts response.return_message
+           else
+               @error_links[url] = response.code
+           end
+          end
+        hydra.queue(request)
+		  end
+		  puts 'Started running'
+		  hydra.run 
+      puts fail
 		end
 
 end
