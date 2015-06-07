@@ -27,8 +27,7 @@ class CheckLinksController < ApplicationController
   def create
     @check_link = CheckLink.new()
 
-    @check_link.get_all_links(check_link_params['checked_url']).class
-
+    @check_link.get_all_links(check_link_params['checked_url'])
     respond_to do |format|
       if @check_link.save
         format.html { redirect_to @check_link, notice: 'Check link was successfully created.' }
@@ -39,7 +38,34 @@ class CheckLinksController < ApplicationController
       end
     end
   end
+ 
+=begin
+  def create
+    @check_link = CheckLink.new()
 
+    #@check_link.get_all_links(check_link_params['checked_url'])
+    response.headers['Content-Type'] = 'text/event-stream'
+    response.stream.write(@check_link.stream)
+    respond_to do |format|
+      if @check_link.save
+        #@check_link.get_all_links(check_link_params['checked_url'])
+        
+        #response.stream.write(@check_link.stream)
+        format.html { redirect_to @check_link, notice: 'Check link was successfully created.' }
+        format.json { render :show, status: :created, location: @check_link }
+      else
+        format.html { render :new }
+        format.json { render json: @check_link.errors, status: :unprocessable_entity }
+      end
+    end
+    
+    ensure
+      response.stream.close
+    
+  end
+=end
+
+ 
   # PATCH/PUT /check_links/1
   # PATCH/PUT /check_links/1.json
   def update

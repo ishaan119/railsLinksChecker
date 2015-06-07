@@ -97,7 +97,8 @@ class CheckLink < ActiveRecord::Base
   self.checked_url = model_check_link
   
   end
-
+  
+  
 	private
 		def get_links_for_single_link(link)
 		  begin

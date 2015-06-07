@@ -20213,3 +20213,2155 @@ Processing by CheckLinksController#show as HTML
   [1m[36mCheckLink Load (0.1ms)[0m  [1mSELECT  "check_links".* FROM "check_links" WHERE "check_links"."id" = ? LIMIT 1[0m  [["id", 36]]
   Rendered check_links/show.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 63ms (Views: 57.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 15:30:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (3.1ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 364ms (Views: 344.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 15:30:48 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (18.2ms)
+  Rendered check_links/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:30:54 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z1WQXzsj7ZrAJQvrs8jUjI0fylDWvX2rdG6bwkjF1fR5xs6OSyBj7J24U+4oI+ttBwoaHyNXSfREkHgP1ZfX/Q==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: Libcurl initialized
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.095534
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.172682
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.178561
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.187535
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.189291
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.201656
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.2017
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.208391
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.208025
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.216786
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.279641
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.351278
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.545446
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.545389
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.545337
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.5451630000000001
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.548047
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.556549
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.558198
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.593268
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.608663
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.6101829999999999
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.954385
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.984021
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.151256
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.40563
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433629878.1876 response_code=200 return_code=ok total_time=1.631125
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.726633
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=2.904199
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=3.821931
+ETHON: performed MULTI
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-06 22:31:31.424962"], ["updated_at", "2015-06-06 22:31:31.424962"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 36846ms (ActiveRecord: 2.1ms)
+
+ActionDispatch::IllegalStateError (header already sent):
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:216:in `[]='
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/http/response.rb:260:in `location='
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rack_delegation.rb:8:in `location='
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/redirecting.rb:75:in `redirect_to'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/flash.rb:57:in `redirect_to'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:64:in `block in redirect_to'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `block in instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:63:in `redirect_to'
+  /Users/ishaansutaria/Documents/projects/railsLinksChecker/app/controllers/check_links_controller.rb:39:in `block (2 levels) in create'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/mime_responds.rb:215:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/mime_responds.rb:215:in `respond_to'
+  /Users/ishaansutaria/Documents/projects/railsLinksChecker/app/controllers/check_links_controller.rb:37:in `create'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/base.rb:198:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:117:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:117:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:505:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:505:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `block in instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/base.rb:137:in `process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.1/lib/action_view/rendering.rb:30:in `process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:278:in `block in process'
+
+
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:34:03 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ksUSnlOLfkrQfLuNLYhTr/GmWlr7lPVkO899ndvpjpE2EqbCU2jj3bcquuvXR6vNdNJJp4EZ4qgEd476j2kMw==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.102668
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.185205
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.203032
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.212407
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.214158
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.224327
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.225877
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.231844
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.231604
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.24901
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.247875
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.249535
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.315997
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.325326
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.327664
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.336028
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.335964
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.336666
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.349406
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.456329
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.552295
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.6205
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.669868
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=0.683713
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.85141
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433630046.1619 response_code=200 return_code=ok total_time=1.335689
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.34913
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.43789
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.413496
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=2.956001
+ETHON: performed MULTI
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-06 22:34:08.527977"], ["updated_at", "2015-06-06 22:34:08.527977"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.012157
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.147847
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.149947
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.161746
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.194805
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.198713
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.202119
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.204201
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.22874099999999997
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.256927
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.258926
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.26151500000000005
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.262953
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.265547
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.283814
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.283736
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.287203
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.28861099999999995
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.289324
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.30798800000000004
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.332151
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.463623
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.489533
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=0.6564380000000001
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433630049.0793 response_code=200 return_code=ok total_time=0.7376469999999999
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.800465
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.16275
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.614337
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.162274
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=2.846626
+ETHON: performed MULTI
+Redirected to http://localhost:3000/check_links/38
+Completed 302 Found in 7981ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/check_links/38" for ::1 at 2015-06-06 15:34:11 -0700
+Processing by CheckLinksController#show as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mCheckLink Load (0.2ms)[0m  [1mSELECT  "check_links".* FROM "check_links" WHERE "check_links"."id" = ? LIMIT 1[0m  [["id", 38]]
+  Rendered check_links/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:37:01 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ksUSnlOLfkrQfLuNLYhTr/GmWlr7lPVkO899ndvpjpE2EqbCU2jj3bcquuvXR6vNdNJJp4EZ4qgEd476j2kMw==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+
+RuntimeError - can't modify frozen Hash:
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:316:in `[]='
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:530:in `[]='
+  actionpack (4.2.1) lib/action_dispatch/middleware/session/cookie_store.rb:110:in `set_cookie'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:351:in `commit_session'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:226:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.3) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.3) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.3) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.3) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.3ms)
+
+IOError (closed stream):
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/http/response.rb:89:in `write'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:138:in `write'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:282:in `rescue in block in process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:295:in `block in process'
+
+
+
+NameError (undefined local variable or method `response' for #<CheckLink:0x007fd38073e7d0>):
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activemodel-4.2.1/lib/active_model/attribute_methods.rb:433:in `method_missing'
+  /Users/ishaansutaria/Documents/projects/railsLinksChecker/app/models/check_link.rb:27:in `get_all_links'
+  /Users/ishaansutaria/Documents/projects/railsLinksChecker/app/controllers/check_links_controller.rb:31:in `create'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/base.rb:198:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:117:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:117:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:505:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:505:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `block in instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/base.rb:137:in `process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.1/lib/action_view/rendering.rb:30:in `process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:278:in `block in process'
+
+
+
+
+Started POST "/__better_errors/b0ea635b1325b816/variables" for ::1 at 2015-06-06 15:37:02 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 15:47:33 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (0.9ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 105ms (Views: 87.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 15:47:35 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (2.5ms)
+  Rendered check_links/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:47:39 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TrbnUEG47lObF412xEkUwOGqceiJY3n1+PN/6DRLRwX4JbmBMbtgJcaK1XNfoisha7+hp3yJTarIDZwlqRlFDA==", "check_link"=>{"checked_url"=>"asd"}, "commit"=>"Create Check link"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered check_links/_form.html.erb (12.3ms)
+  Rendered check_links/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 103ms (Views: 93.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 15:54:15 -0700
+
+SyntaxError - syntax error, unexpected keyword_end, expecting end-of-input:
+  app/controllers/check_links_controller.rb:95:in `'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:457:in `block in load_file'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:647:in `new_constants_in'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:456:in `load_file'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:354:in `require_or_load'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:494:in `load_missing_constant'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:566:in `get'
+  activesupport (4.2.1) lib/active_support/dependencies.rb:597:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  bullet (4.14.7) lib/bullet/rack.rb:10:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.3) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.3) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.3) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.3) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/38bb4ae8afe00057/variables" for ::1 at 2015-06-06 15:54:16 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 15:54:26 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[36mCheckLink Load (0.9ms)[0m  [1mSELECT "check_links".* FROM "check_links"[0m
+  Rendered check_links/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 182ms (Views: 165.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.min.self-2c354d7c0179bd35563b93633b23ac5fb07c67d531d40a75695bacbd0eadb799.css?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/check_links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/scaffolds.self-4844ae433f2f52ea8ab75688fb035bbb34734c608ff206872d0108f8916f02c2.css?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/application.self-5c084391856d2b7f135587658577a954c08816b90db322e9af3a394695bea420.css?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/check_links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-06 15:54:27 -0700
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 15:54:28 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (2.5ms)
+  Rendered check_links/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:54:29 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UZdvFCnSNjtU/Dgst+KY6FoKS2qZhRiRWBXIBM2O7RD1QNtIKTGrrDOqOUpNLWCK335Yl+MID11nrTtjmQ5vQ==", "check_link"=>{"checked_url"=>"asdasd"}, "commit"=>"Create Check link"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:57:10 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14kAlrpm823KhxjSwU7aQwZ64TA30AjXNVNKNgq9W0dhGl5HymV9G5caQNdapeWijG8xf8I6PIgFran7l+9ZTg==", "check_link"=>{"checked_url"=>"asdasd"}, "commit"=>"Create Check link"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered check_links/_form.html.erb (7.2ms)
+  Rendered check_links/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 132ms (Views: 100.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:58:07 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14kAlrpm823KhxjSwU7aQwZ64TA30AjXNVNKNgq9W0dhGl5HymV9G5caQNdapeWijG8xf8I6PIgFran7l+9ZTg==", "check_link"=>{"checked_url"=>"asdasd"}, "commit"=>"Create Check link"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered check_links/_form.html.erb (23.3ms)
+  Rendered check_links/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 181ms (Views: 143.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:59:18 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14kAlrpm823KhxjSwU7aQwZ64TA30AjXNVNKNgq9W0dhGl5HymV9G5caQNdapeWijG8xf8I6PIgFran7l+9ZTg==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered check_links/_form.html.erb (3.4ms)
+  Rendered check_links/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 227ms (Views: 209.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 15:59:34 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (0.5ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 15:59:35 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (1.7ms)
+  Rendered check_links/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 15:59:40 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"abPAOO1uRnnGbKPqU14slgVb0/6zWBN/MBZATb1+a2HfIJ7pnW3ID5vx++/ItRN3j04DsUayJyAA6KOAICxpaA==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.095212
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.184508
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.185822
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.187191
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.188403
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.201359
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.202799
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.203254
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.217462
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.218445
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.226376
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.33807
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.39
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.41078800000000004
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.412034
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.447651
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.449813
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.45238100000000003
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.454017
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.47679400000000005
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.581353
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=0.653215
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.7137990000000001
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.799878
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.867759
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.07139
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=1.122756
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.283288
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.5814880000000002
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433631582.0111 response_code=200 return_code=ok total_time=3.780475
+ETHON: performed MULTI
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-06 22:59:45.373926"], ["updated_at", "2015-06-06 22:59:45.373926"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 5207ms (ActiveRecord: 9.5ms)
+
+IOError (closed stream):
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/http/response.rb:89:in `write'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:138:in `write'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:282:in `rescue in block in process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:295:in `block in process'
+
+
+
+ActionDispatch::IllegalStateError (header already sent):
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:216:in `[]='
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/http/response.rb:260:in `location='
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rack_delegation.rb:8:in `location='
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/redirecting.rb:75:in `redirect_to'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/flash.rb:57:in `redirect_to'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:64:in `block in redirect_to'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `block in instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:63:in `redirect_to'
+  /Users/ishaansutaria/Documents/projects/railsLinksChecker/app/controllers/check_links_controller.rb:35:in `block (2 levels) in create'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/mime_responds.rb:215:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/mime_responds.rb:215:in `respond_to'
+  /Users/ishaansutaria/Documents/projects/railsLinksChecker/app/controllers/check_links_controller.rb:32:in `create'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/base.rb:198:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:117:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:117:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:505:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:505:in `call'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `block in instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:164:in `instrument'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/abstract_controller/base.rb:137:in `process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionview-4.2.1/lib/action_view/rendering.rb:30:in `process'
+  /Users/ishaansutaria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_controller/metal/live.rb:278:in `block in process'
+
+
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 16:00:07 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G4hNNbCYajLIqbFSqrHIMiQ72uSaHnlIBkXNImgEEg+tGxPkwJvkRJU06VcxWvfTri4Kq2/0TRc2uy7v9VYQBg==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.012495
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.111108
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.190548
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.192283
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.202123
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.212445
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.213191
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.214177
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.221411
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.222382
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.233417
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.2345
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.234096
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.30095
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.313897
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.327009
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.330793
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.331928
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.33717299999999994
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.364428
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.506294
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.58049
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.71309
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.794196
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=0.8074520000000001
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=0.857287
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433631609.0713 response_code=200 return_code=ok total_time=0.909678
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.214393
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.344811
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.286412
+ETHON: performed MULTI
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (10.7ms)[0m  [1mINSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-06 23:00:10.975010"], ["updated_at", "2015-06-06 23:00:10.975010"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/check_links/40
+Completed 302 Found in 3651ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/check_links/40" for ::1 at 2015-06-06 16:00:11 -0700
+Processing by CheckLinksController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mCheckLink Load (0.2ms)[0m  [1mSELECT  "check_links".* FROM "check_links" WHERE "check_links"."id" = ? LIMIT 1[0m  [["id", 40]]
+  Rendered check_links/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 89ms (Views: 86.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 16:04:23 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (0.9ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 139ms (Views: 125.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 16:04:25 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (2.8ms)
+  Rendered check_links/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 16:04:32 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"caMmuDpMG+7pFRT5D2uX4iLnueC3wrl2rl9m8SDoH/fHMHhpSk+VmLSITPyUgKgDqPJpr0IojSmeoYU8vbod/g==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.08870999999999996
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.18759199999999998
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.18933999999999995
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.18880699999999995
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.18900799999999995
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.19515099999999996
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.19564400000000004
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.21881300000000004
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.221738
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.23444399999999999
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.24221099999999995
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.25674300000000005
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.281837
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.28452500000000003
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.28680799999999995
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.29285000000000005
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.29388800000000004
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.301708
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.35912
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.392151
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.429083
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.477051
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.626548
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=0.747736
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.82212
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.056096
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.3492739999999999
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433631874.5205 response_code=200 return_code=ok total_time=1.64721
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=1.854492
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=2.180026
+ETHON: performed MULTI
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-06 23:04:36.114008"], ["updated_at", "2015-06-06 23:04:36.114008"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/check_links/41
+Completed 302 Found in 3605ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/check_links/41" for ::1 at 2015-06-06 16:04:36 -0700
+Processing by CheckLinksController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[35mCheckLink Load (0.2ms)[0m  SELECT  "check_links".* FROM "check_links" WHERE "check_links"."id" = ? LIMIT 1  [["id", 41]]
+  Rendered check_links/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 147ms (Views: 144.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 16:08:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (0.2ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 300ms (Views: 286.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-5c084391856d2b7f135587658577a954c08816b90db322e9af3a394695bea420.css?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/bootstrap.min.self-2c354d7c0179bd35563b93633b23ac5fb07c67d531d40a75695bacbd0eadb799.css?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/scaffolds.self-4844ae433f2f52ea8ab75688fb035bbb34734c608ff206872d0108f8916f02c2.css?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/check_links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/check_links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-06 16:08:44 -0700
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 16:08:46 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (39.0ms)
+  Rendered check_links/new.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 16:08:52 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SpRkXpWpTdp7DSQnSzEQFc5JkA9DXhzGi65Xv25QGH38BzqP5arDrCaQfCLQ2i/0RFxAQLa0KJm7ULRy8wIadA==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: Libcurl initialized
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.093495
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.208159
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.208113
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.20829
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.208288
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.209691
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.212858
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.221037
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.221824
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.22257
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.247563
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.310315
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.358271
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.361936
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.399135
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.399085
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.450371
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.466416
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.577823
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.61753
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.634048
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.638484
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=0.705419
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=0.73651
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=1.052433
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.204918
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.2641689999999999
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433632134.4675 response_code=200 return_code=ok total_time=1.524162
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.490119
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=2.5182
+ETHON: performed MULTI
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-06 23:08:56.564385"], ["updated_at", "2015-06-06 23:08:56.564385"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/check_links/42
+Completed 302 Found in 3798ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/check_links/42" for ::1 at 2015-06-06 16:08:56 -0700
+Processing by CheckLinksController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[35mCheckLink Load (0.2ms)[0m  SELECT  "check_links".* FROM "check_links" WHERE "check_links"."id" = ? LIMIT 1  [["id", 42]]
+  Rendered check_links/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 16:09:01 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[36mCheckLink Load (0.2ms)[0m  [1mSELECT "check_links".* FROM "check_links"[0m
+  Rendered check_links/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 16:09:03 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (1.2ms)
+  Rendered check_links/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 16:09:09 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9gRzWV7GCH05Bm2dR4YrDrCePDpNAD/HcysScEnEkitAly2ILsWGC2SbNZjcbRTvOovsdbjqC5hD1fG91JaQIg==", "check_link"=>{"checked_url"=>"electricimp.com"}, "commit"=>"Create Check link"}
+Completed   in 199846ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 16:25:54 -0700
+
+ActiveRecord::AdapterNotSpecified - 'development' database is not configured. Available: ["default"]:
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.1) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.1) lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+  activerecord (4.2.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/919e6b705ad2c94b/variables" for ::1 at 2015-06-06 16:25:54 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 16:26:54 -0700
+
+PG::ConnectionBad - fe_sendauth: no password supplied
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/902f9618fcafc010/variables" for ::1 at 2015-06-06 16:26:55 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 16:29:19 -0700
+
+PG::ConnectionBad - fe_sendauth: no password supplied
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/a143d61153a9c392/variables" for ::1 at 2015-06-06 16:29:19 -0700
+
+
+Started GET "/" for ::1 at 2015-06-06 16:29:20 -0700
+
+PG::ConnectionBad - fe_sendauth: no password supplied
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/be45ccd8590111ac/variables" for ::1 at 2015-06-06 16:29:20 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:11:18 -0700
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/d6d244cc7c87e208/variables" for ::1 at 2015-06-06 17:11:18 -0700
+
+
+Started GET "/" for ::1 at 2015-06-06 17:11:20 -0700
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-06-06 17:11:21 -0700
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/db04d51791c55f30/variables" for ::1 at 2015-06-06 17:11:21 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:14:30 -0700
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/c145633d3da75e10/variables" for ::1 at 2015-06-06 17:14:31 -0700
+
+
+Started GET "/" for ::1 at 2015-06-06 17:14:33 -0700
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/3ac7a2e225016bdc/variables" for ::1 at 2015-06-06 17:14:33 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:20:13 -0700
+
+PG::ConnectionBad - could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/pgsql_socket/.s.PGSQL.5432"?
+:
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/93b0580c2d6ed00d/variables" for ::1 at 2015-06-06 17:20:13 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:21:13 -0700
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/03e01cdeb1d1b83a/variables" for ::1 at 2015-06-06 17:21:13 -0700
+
+
+Started GET "/" for ::1 at 2015-06-06 17:21:17 -0700
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/5c1a20c710d0c6a9/variables" for ::1 at 2015-06-06 17:21:17 -0700
+  [1m[36m (21.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCheckLinks (20150525033548)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (12.5ms)[0m  [1mCREATE TABLE "check_links" ("id" serial primary key, "checed_url" text, "errors_found" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150525033548"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AlterColumnCheckLinksChecedUrl (20150525034507)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "check_links" RENAME COLUMN "checked_url" TO "checked_url"[0m
+PG::UndefinedColumn: ERROR:  column "checked_url" does not exist
+: ALTER TABLE "check_links" RENAME COLUMN "checked_url" TO "checked_url"
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AlterColumnCheckLinksChecedUrl (20150525034507)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "check_links" RENAME COLUMN "checked_url" TO "checked_url"[0m
+PG::UndefinedColumn: ERROR:  column "checked_url" does not exist
+: ALTER TABLE "check_links" RENAME COLUMN "checked_url" TO "checked_url"
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'check_links'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2015-06-06 17:23:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 480ms (Views: 470.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-2c354d7c0179bd35563b93633b23ac5fb07c67d531d40a75695bacbd0eadb799.css?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/check_links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/application.self-5c084391856d2b7f135587658577a954c08816b90db322e9af3a394695bea420.css?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/scaffolds.self-4844ae433f2f52ea8ab75688fb035bbb34734c608ff206872d0108f8916f02c2.css?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/check_links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-06 17:23:18 -0700
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:23:24 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (1.1ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 62ms (Views: 52.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 17:23:28 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (29.6ms)
+  Rendered check_links/new.html.erb within layouts/application (35.4ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 3.0ms)
+
+NoMethodError - undefined method `checked_url' for #<CheckLink:0x007fd1bb8504a0>:
+  activemodel (4.2.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  actionview (4.2.1) lib/action_view/helpers/tags/base.rb:28:in `value'
+  actionview (4.2.1) lib/action_view/helpers/tags/base.rb:38:in `value_before_type_cast'
+  actionview (4.2.1) lib/action_view/helpers/tags/text_area.rb:17:in `block in render'
+  actionview (4.2.1) lib/action_view/helpers/tags/text_area.rb:17:in `render'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:886:in `text_area'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:1322:in `text_area'
+  app/views/check_links/_form.html.erb:16:in `block in _app_views_check_links__form_html_erb___591986468680670035_70269385626220'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  app/views/check_links/_form.html.erb:1:in `_app_views_check_links__form_html_erb___591986468680670035_70269385626220'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.1) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/check_links/new.html.erb:3:in `_app_views_check_links_new_html_erb__1120627660747671985_70269385560080'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  bullet (4.14.7) lib/bullet/rack.rb:10:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 17:23:28 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (7.0ms)
+  Rendered check_links/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `checked_url' for #<CheckLink:0x007fd1b622fd28>:
+  activemodel (4.2.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  actionview (4.2.1) lib/action_view/helpers/tags/base.rb:28:in `value'
+  actionview (4.2.1) lib/action_view/helpers/tags/base.rb:38:in `value_before_type_cast'
+  actionview (4.2.1) lib/action_view/helpers/tags/text_area.rb:17:in `block in render'
+  actionview (4.2.1) lib/action_view/helpers/tags/text_area.rb:17:in `render'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:886:in `text_area'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:1322:in `text_area'
+  app/views/check_links/_form.html.erb:16:in `block in _app_views_check_links__form_html_erb___591986468680670035_70269382132280'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  app/views/check_links/_form.html.erb:1:in `_app_views_check_links__form_html_erb___591986468680670035_70269382132280'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.1) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/check_links/new.html.erb:3:in `_app_views_check_links_new_html_erb__1120627660747671985_70269340316040'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  bullet (4.14.7) lib/bullet/rack.rb:10:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/0508daea6dd6ebb6/variables" for ::1 at 2015-06-06 17:23:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'check_links'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 17:24:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (34.3ms)
+  Rendered check_links/new.html.erb within layouts/application (40.9ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 5.0ms)
+
+NoMethodError - undefined method `checked_url' for #<CheckLink:0x007ff342dc8510>:
+  activemodel (4.2.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  actionview (4.2.1) lib/action_view/helpers/tags/base.rb:28:in `value'
+  actionview (4.2.1) lib/action_view/helpers/tags/base.rb:38:in `value_before_type_cast'
+  actionview (4.2.1) lib/action_view/helpers/tags/text_area.rb:17:in `block in render'
+  actionview (4.2.1) lib/action_view/helpers/tags/text_area.rb:17:in `render'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:886:in `text_area'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:1322:in `text_area'
+  app/views/check_links/_form.html.erb:16:in `block in _app_views_check_links__form_html_erb__2597237107536627971_70341397347000'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.1) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.1) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  app/views/check_links/_form.html.erb:1:in `_app_views_check_links__form_html_erb__2597237107536627971_70341397347000'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.1) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/check_links/new.html.erb:3:in `_app_views_check_links_new_html_erb___2739444836803920215_70341390251460'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  bullet (4.14.7) lib/bullet/rack.rb:10:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/ishaansutaria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1f1256c7b4b78c77/variables" for ::1 at 2015-06-06 17:24:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCheckLinks (20150525033548)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (5.5ms)[0m  DROP TABLE "check_links"
+  [1m[36mSQL (2.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20150525033548"]]
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCheckLinks (20150525033548)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (13.9ms)[0m  [1mCREATE TABLE "check_links" ("id" serial primary key, "checked_url" text, "errors_found" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150525033548"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'check_links'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:26:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CheckLinksController#index as HTML
+  [1m[35mCheckLink Load (0.9ms)[0m  SELECT "check_links".* FROM "check_links"
+  Rendered check_links/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 326ms (Views: 308.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/check_links/new" for ::1 at 2015-06-06 17:26:31 -0700
+Processing by CheckLinksController#new as HTML
+  Rendered check_links/_form.html.erb (21.4ms)
+  Rendered check_links/new.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 109ms (Views: 101.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/check_links" for ::1 at 2015-06-06 17:26:39 -0700
+Processing by CheckLinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nU3HwdNHg8T7ijd8CjErGgxNt7O9pl5Ewj1eEZPJ0Rsr3pkQo0QNsqYXb3mR2hT7hlhn/EhMahvyw73cDpvTEg==", "check_link"=>{"checked_url"=>"aylanetworks.com"}, "commit"=>"Create Check link"}
+ETHON: Libcurl initialized
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=HTTP://tel:+14088309844/ response_code=0 return_code=url_malformat total_time=0.0
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/wp-content/uploads/2013/03/homepage_award_block_logo.png response_code=200 return_code=ok total_time=0.18079500000000004
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/platform-components response_code=200 return_code=ok total_time=0.29652999999999996
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/solution-briefs response_code=200 return_code=ok total_time=0.29678000000000004
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/white-papers response_code=200 return_code=ok total_time=0.29784600000000006
+ETHON:         performed EASY effective_url=HTTP://javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)()); response_code=0 return_code=couldnt_resolve_host total_time=0.29687300000000005
+ETHON:         performed EASY effective_url=http://www.computextaipei.com.tw/en_US/index.html response_code=200 return_code=ok total_time=0.31548600000000004
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/dev-center/ayla-design-kits response_code=200 return_code=ok total_time=0.35939
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/key-capabilities response_code=200 return_code=ok total_time=0.365001
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/resources/videos response_code=200 return_code=ok total_time=0.364961
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/what-is-aylas-agile-mobile-application-platform response_code=200 return_code=ok total_time=0.36496700000000004
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/platform/ayla-professional-services response_code=200 return_code=ok total_time=0.364965
+ETHON:         performed EASY effective_url=http://www.aylanetworks.com/company/contact-us response_code=200 return_code=ok total_time=0.366629
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/gartner-2015-iot-cool-vendor response_code=200 return_code=ok total_time=0.521984
+ETHON:         performed EASY effective_url=http://www.forbes.com/sites/aarontilley/2014/11/12/former-tencent-cto-jeff-xiong-joins-ayla-networks-board-as-he-starts-investing-in-internet-of-things-startups-coming-to-china/  response_code=200 return_code=ok total_time=0.5402089999999999
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-amap-solution-brief response_code=200 return_code=ok total_time=0.541324
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/how-to-select-the-right-iot-platform response_code=200 return_code=ok total_time=0.5432060000000001
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/considerations-for-your-connected-device-strategy response_code=200 return_code=ok total_time=0.54481
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/ayla-networks-computex-2015 response_code=200 return_code=ok total_time=0.555137
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-security-of-things-mitigating-risk-in-iot response_code=200 return_code=ok total_time=0.605153
+ETHON:         performed EASY effective_url=http://info.aylanetworks.com/the-secret-to-winning-market-share-for-the-iot response_code=200 return_code=ok total_time=0.605971
+ETHON:         performed EASY effective_url=http://blog.aylanetworks.com/ response_code=200 return_code=ok total_time=0.610868
+ETHON:         performed EASY effective_url=http://blogs.wsj.com/digits/2014/04/30/cisco-and-others-fund-aylas-effort-in-things-software/  response_code=200 return_code=ok total_time=0.650246
+ETHON:         performed EASY effective_url=http://www.mouser.com/ProductDetail/Murata/LBWB1ZZYDZ-BTEMP-AYLAKIT/?qs=/ha2pyFadujNsnL9gVOwLokLwzt9VvQELk8xhiAH5HOJuWjLmPhtqA%3D%3D response_code=200 return_code=ok total_time=0.79055
+ETHON:         performed EASY effective_url=https://www.google.com/maps/search/607+W+California+Ave,+Sunnyvale,+CA/@37.382392,-122.033816,14z?source=embed&hl=en&dg=dbrw&newdg=1 response_code=200 return_code=ok total_time=1.105166
+ETHON:         performed EASY effective_url=https://www.linkedin.com/company/ayla-networks response_code=200 return_code=ok total_time=1.290886
+ETHON:         performed EASY effective_url=https://twitter.com/aylanetworks response_code=200 return_code=ok total_time=1.88737
+ETHON:         performed EASY effective_url=http://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Faylanetworks&domain=.weibo.com&ua=php-sso_sdk_client-0.6.11&_rand=1433636820.5919 response_code=200 return_code=ok total_time=2.635171
+ETHON:         performed EASY effective_url=https://myaccount.nytimes.com/auth/login?URI=http%3A%2F%2Fbits.blogs.nytimes.com%2F2013%2F06%2F05%2Fstart-up-to-connect-thermostats-light-sensors%2F%3Fmodule%3DSearch%26mabReward%3Drelbias%253Ar%252C%257B%25222%2522%253A%2522RI%253A13%2522%257D%26_r%3D5&REFUSE_COOKIE_ERROR=SHOW_ERROR response_code=200 return_code=ok total_time=2.672718
+ETHON:         performed EASY effective_url=http://www.ayla.com.cn/ response_code=200 return_code=ok total_time=2.69277
+ETHON:         performed EASY effective_url=http://www.wired.com/2013/06/how-the-rest-of-us-can-build-the-internet-of-things/  response_code=200 return_code=ok total_time=3.694663
+ETHON: performed MULTI
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "check_links" ("errors_found", "checked_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["errors_found", 0], ["checked_url", "aylanetworks.com"], ["created_at", "2015-06-07 00:27:02.687340"], ["updated_at", "2015-06-07 00:27:02.687340"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/check_links/1
+Completed 302 Found in 23250ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/check_links/1" for ::1 at 2015-06-06 17:27:02 -0700
+Processing by CheckLinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCheckLink Load (0.5ms)[0m  SELECT  "check_links".* FROM "check_links" WHERE "check_links"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered check_links/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/check_links" for ::1 at 2015-06-06 17:27:06 -0700
+Processing by CheckLinksController#index as HTML
+  [1m[36mCheckLink Load (0.5ms)[0m  [1mSELECT "check_links".* FROM "check_links"[0m
+  Rendered check_links/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.5ms)
